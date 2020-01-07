@@ -1,0 +1,310 @@
+<?xml version = "1.0"?>
+<GameData>
+<!-- screenTitle is also used to identify you and your animation. 
+     So make sure to include your name as part of the screenTitle -->
+<title>BEAT GANON</title>
+<maxStringSize>50</maxStringSize>
+
+<frameCapOn>true</frameCapOn>
+<period>17</period>
+
+<maxFrames>1800</maxFrames>
+<username>jwarche</username>
+<username2>Jacob Archer</username2>
+
+<view>
+  <width>1600</width>
+  <height>1000</height>
+  <loc x="30" y="30"/>
+</view>
+
+<world>
+  <width>1600</width>
+  <height>1000</height>
+</world>
+
+<back>
+  <file>assets/Dungeon.png</file>
+  <factor>100</factor>
+  <transparency>false</transparency>
+</back>
+
+<back2>
+  <file>assets/YouLose.png</file>
+  <factor>100</factor>
+  <transparency>false</transparency>
+</back2>
+
+<back3>
+  <file>assets/YouWin.jpg</file>
+  <factor>100</factor>
+  <transparency>false</transparency>
+</back3>
+
+
+<window>
+  <file>assets/thegoodone.png</file>
+  <factor>4</factor>
+  <transparency>false</transparency>
+</window>
+
+<font name="font">
+  <file>fonts/ProFontWindows.ttf</file>
+  <size>24</size>
+  <red>255</red>
+  <green>255</green>
+  <blue>0</blue>
+  <alpha>0</alpha>
+</font>
+
+<HealthBar>
+  <!-- Health Bar -->
+  <name>First Player</name>
+  <startLoc2 x="30" y="30"/>
+  <!-- number of times the bar is decremented -->
+  <increment>10</increment>
+  <interval>1000</interval>
+  <width>200</width>
+  <height>15</height>
+  <speedXX>0</speedXX>
+  <speedYY>0</speedYY>
+  <backColor>
+    <r>255</r>
+    <g>255</g>
+    <b>255</b>
+    <a>127</a>
+  </backColor>
+  <barColor>
+    <r>255</r>
+    <g>0</g>
+    <b>0</b>
+    <a>255</a>
+  </barColor>
+</HealthBar>
+
+<HealthBar2>
+<!-- Health Bar -->
+  <name>Second Player</name>
+  <startLoc2 x="30" y="70"/>
+  <!-- number of times the bar is decremented -->
+  <increment>10</increment> <!-- 10 hits to die -->
+  <interval>1000</interval>
+  <width>200</width>
+  <height>15</height>
+  <speedXX>0</speedXX>
+  <speedYY>0</speedYY>
+  <backColor>
+    <r>255</r>
+    <g>255</g>
+    <b>255</b>
+    <a>127</a>
+  </backColor>
+  <barColor>
+    <r>0</r>
+    <g>0</g>
+    <b>255</b>
+    <a>255</a>
+  </barColor>
+</HealthBar2>
+
+<GanonHealth>
+<!-- Health Bar -->
+  <name>Ganon, The King Of Thieves</name>
+  <startLoc2 x="50" y="925"/>
+  <!-- number of times the bar is decremented -->
+  <increment>1500</increment> <!-- Width/increment -->
+  <interval>1000</interval>
+  <width>1500</width>
+  <height>50</height>
+  <speedXX>0</speedXX>
+  <speedYY>0</speedYY>
+  <Phase2>1000</Phase2>
+  <Phase3>500</Phase3>
+  <backColor>
+    <r>255</r>
+    <g>255</g>
+    <b>255</b>
+    <a>127</a>
+  </backColor>
+  <barColor>
+    <r>102</r>
+    <g>51</g>
+    <b>0</b>
+    <a>255</a>
+  </barColor>
+</GanonHealth>
+
+<Asteroid>
+  <file>assets/asteroid.png</file>
+  <startLoc x="227" y="240"/>
+  <frames>1</frames>
+  <frameInterval>1</frameInterval>
+  <speedX>2000</speedX>
+  <speedY>500</speedY>
+  <safeDistance>75</safeDistance>
+  <transparency>false</transparency>
+</Asteroid>
+
+<Link1>
+  <file>assets/Link5.png</file>
+  <startLoc x="700" y="700"/>
+  <frames>60</frames>
+  <frameInterval>100</frameInterval>
+  <speedX>400</speedX>
+  <speedY>400</speedY>
+  <transparency>false</transparency>
+  <!-- Health Bar -->
+  <startLoc2 x="30" y="40"/>
+  <!-- number of times the bar is decremented -->
+  <increment>10</increment>
+  <interval>1000</interval>
+  <width>200</width>
+  <height>15</height>
+  <speedXX>0</speedXX>
+  <speedYY>0</speedYY>
+  <backColor>
+    <r>255</r>
+    <g>255</g>
+    <b>255</b>
+    <a>127</a>
+  </backColor>
+  <barColor>
+    <r>255</r>
+    <g>0</g>
+    <b>0</b>
+    <a>255</a>
+  </barColor>
+  <chunk>
+    <size>16</size>
+    <distance>200</distance>
+  </chunk>
+</Link1>
+
+<Link2>
+  <file>assets/Link5Blue.png</file>
+  <startLoc x="800" y="700"/>
+  <frames>60</frames>
+  <frameInterval>100</frameInterval>
+  <speedX>400</speedX>
+  <speedY>400</speedY>
+  <transparency>false</transparency>
+  <!-- Health Bar -->
+  <startLoc2 x="30" y="70"/>
+  <!-- number of times the bar is decremented -->
+  <increment>10</increment>
+  <interval>1000</interval>
+  <width>200</width>
+  <height>15</height>
+  <speedXX>0</speedXX>
+  <speedYY>0</speedYY>
+  <backColor>
+    <r>255</r>
+    <g>255</g>
+    <b>255</b>
+    <a>127</a>
+  </backColor>
+  <barColor>
+    <r>0</r>
+    <g>0</g>
+    <b>255</b>
+    <a>255</a>
+  </barColor>
+  <chunk>
+    <size>16</size>
+    <distance>200</distance>
+  </chunk>
+</Link2>
+
+<Ganon>
+  <file>assets/Ganonsheet3.png</file>
+  <startLoc x="750" y="400"/>
+  <frames>10</frames>
+  <frameInterval>50</frameInterval>
+  <speedX>150</speedX>
+  <speedY>150</speedY>
+  <bullet>Bullet2</bullet>
+  <bullet2>Whirlpool</bullet2>
+  <bullet3>Triforce4</bullet3>
+  <safeDistance>150</safeDistance>
+  <AttackInterval>25</AttackInterval>
+  <ShootWaitSeconds>7</ShootWaitSeconds>
+  <distance>1000</distance>
+  <transparency>false</transparency>
+  <chunk>
+    <size>32</size>
+    <distance>400</distance>
+  </chunk>
+</Ganon>
+
+<Triforce4>
+  <file>assets/Triforce4.png</file>
+  <strategy>perpixel</strategy>
+  <frameInterval>1</frameInterval> 
+  <interval>100</interval> <!-- Put interval to 1 to be cool -->
+  <frames>75</frames>
+  <startLoc x="427" y="240"/>
+  <speedXX>100</speedXX>
+  <speedYY>100</speedYY>
+  <distance>5000</distance> <!-- Distance from boss (change this) -->
+  <transparency>true</transparency>
+  <chunk>
+    <size>16</size>
+    <distance>200</distance>
+  </chunk>
+</Triforce4>
+
+<Bullet2>
+  <file>assets/Bullet2.png</file>
+  <strategy>perpixel</strategy>
+  <frameInterval>1</frameInterval> 
+  <interval>200</interval> <!-- Put interval to 1 to be cool -->
+  <frames>18</frames>
+  <startLoc x="427" y="240"/>
+  <speedXX>100</speedXX>
+  <speedYY>100</speedYY>
+  <distance>1000</distance> <!-- Distance from boss (change this) -->
+  <transparency>true</transparency>
+  <chunk>
+    <size>16</size>
+    <distance>200</distance>
+  </chunk>
+</Bullet2>
+
+<Whirlpool>
+  <file>assets/Whirlpool2.png</file>
+  <strategy>perpixel</strategy>
+  <frameInterval>50</frameInterval> 
+  <interval>200</interval> <!-- Put interval to 1 to be cool -->
+  <frames>4</frames>
+  <startLoc x="427" y="240"/>
+  <speedXX>100</speedXX>
+  <speedYY>100</speedYY>
+  <distance>2000</distance> <!-- Distance from boss (change this) -->
+  <transparency>true</transparency>
+  <chunk>
+    <size>16</size>
+    <distance>200</distance>
+  </chunk>
+</Whirlpool>
+
+<hud>
+  <x>1400</x>
+  <y>0</y>
+  <w>200</w>
+  <h>270</h>
+  <r>255</r>
+  <g>255</g>
+  <b>255</b>
+  <a>255</a>
+  <str1>Toggle: F1</str1>
+  <str2>Restart: R</str2>
+  <str3>GodMode: G</str3>
+  <str4>Player 1</str4>
+  <str5>Move: WASD</str5>
+  <str6>Attack: SPACE</str6>
+  <str7>Player 2</str7>
+  <str8>Move: Arrow Keys</str8>
+  <str9>Attack R CTRL</str9>
+</hud>
+
+</GameData>
